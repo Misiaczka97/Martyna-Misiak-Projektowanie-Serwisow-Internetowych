@@ -1,0 +1,120 @@
+<main>
+    <div id="ad_vertical_left"> reklama </div>
+    <div id="ad_vertical_right"> reklama </div>
+    <article id="premium_text">
+        <h1>Subskrybuj Rafa24.es</h1>
+        <p>Wspieraj profesjoną stronę do rozpowrzechniania informacjii w Polsce i na Świecie.</p>
+    </article>
+    <div id="subscription">
+        <div>
+            <h3>Subskrypcja Roczna.</h3>
+            <div><p>599.99 zł</p></div>
+        </div>
+        <div>
+            <p>Dostęp do konta premium przez 12 miesięcy</p>
+            <div id="buy_premium">WYBIERAM</div>
+        </div>
+    </div>
+    <div id="subscription">
+        <div>
+            <h3>Subskrypcja Miesięczna.</h3>
+            <div><p>79.99 zł</p></div>
+        </div>
+        <div>
+            <p>Dostęp do konta premium przez 1 miesiąc</p>
+            <div id="buy_premium">WYBIERAM</div>
+        </div>
+    </div>
+    <style>
+
+        *{
+            font-family:sans-serif;
+        }
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#premium_text{
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px;
+}
+#subscription{
+    margin-top: 10px;
+    border: 1px solid #141414;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#subscription>div>h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+#subscription>p{
+    font-size: large;
+    font-weight: 500;
+}
+
+#subscription>div>div>p{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#buy_premium{
+    text-align: center;
+    background: rgb(133, 0, 0);
+    border: 1px #141414 solid;
+    padding: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top:10px ;
+    transition:background-color 0.5s ;
+}
+#buy_premium:hover{
+    background-color: #141414;
+}
+
+
+
+#ad_vertical_left{
+    background-color: #cecece;
+    margin-top: 1px;
+    width: 7%;
+    height: 55%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ad_vertical_right{
+    background-color: #cecece;
+    margin-top: 1px;
+    width: 7%;
+    height: 55%;
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</main>

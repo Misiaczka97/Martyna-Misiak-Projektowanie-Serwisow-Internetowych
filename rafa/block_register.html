@@ -1,0 +1,132 @@
+    <div id="register_popup_animation">
+        <div id="register_popup_window">
+            <h1>Załóż Konto</h1>
+            <form method="post">
+                <div id="inputs">
+                    <input id = "email" type="email" placeholder="Email"/>
+                    <input id = "name" type="text" placeholder="Imię"/>
+                    <input id = "password1" type="password" placeholder="hasło"/>
+                    <input id = "password2" type="password" placeholder="powtórz hasło"/>                    
+                    <div id="terms_of_service">
+                        <input type="checkbox" id="terms"/>
+                        <label for="terms">Zaakceptuj regulamin*</label>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <input id="submit_button" type="button" value="zarejestruj się" name="login"/>
+                    <button id="return">Zamknij</button>
+                </div>
+                <div id="error">
+                </div>
+            </form>
+        </div>
+        <div id="darker_background"></div>
+    </div>
+        <style>
+         form{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+         }
+         #return{
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: larger;
+            border-radius: 0;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: #585858 solid 1px;
+         }
+         #register_popup_window{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: fixed;
+            background-color: #cecece;
+            height: 500px;
+            width: 450px;
+            border-radius: 20px;
+            border: #141414 solid 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 150px;
+            z-index: 999;
+            left: calc(50% - 225px);
+            align-items: center;
+            box-shadow: 0px 0px 10px -3px rgba(66, 68, 90, 1);
+            animation: 0.5s starting_animation;
+            /* animation: 0.5s ending_animation; */
+        }
+        @keyframes starting_animation {
+            0% {
+            transform: translatey(-10%);
+            opacity: 0;
+            }
+            100% {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+        @keyframes ending_animation {
+            100% {
+            transform: translatey(-10%);
+            opacity: 0;
+            }
+            0% {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+        #darker_background{
+            position: fixed;
+            top: 0;
+            background-color: rgba(20, 20, 20, 0.356);
+            width: 100%;
+            height: 100vh;
+            z-index: 989;
+        }
+
+        #register_popup_window>h1{
+            margin-top: 40px;
+            margin-bottom: 50px;
+            overflow: hidden;
+            text-align: center;
+            
+        }
+        #inputs{
+            display: flex;
+            flex-direction: column;
+        }
+        #inputs>input{
+            margin-bottom: 5px;
+            border-radius: 0;
+            background-color: white;
+            border: 0;
+            width: 300px;
+            height: 50px;
+            font-weight: 700;
+            font-size: larger;
+            text-indent: 10px;
+        }
+        #buttons{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #buttons>input{
+            font-weight: 700;
+            font-size: larger;
+            border-radius: 0;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: #585858 solid 1px;
+        }
+        #return{
+            background-color: #141414;
+            color: white;
+        } 
+        </style>

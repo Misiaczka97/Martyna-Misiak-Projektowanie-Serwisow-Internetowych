@@ -1,0 +1,99 @@
+</main>
+<div class="wyszukiwanie">
+    <div class="wyszukiwanie_inputy">
+        <input type="text" id="nyg" placeholder="wyszukaj w serwisie"/>
+        <div id="submit_search">
+            WYSZUKAJ
+        </div>
+    </div>
+    <div class="najnowsze">
+        <input type="checkbox" id="najnowsze"/>
+        <label for="najnowsze">najnowsze na górze</label>
+    </div>
+</div>
+<style>
+.wyszukiwanie{
+    top: 70px;
+    background-color:#cecece;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wyszukiwanie_inputy{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    align-items: center;
+}
+
+.wyszukiwanie input[type=text]{
+    border: 0;
+    padding: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.najnowsze{
+    display: flex;
+    align-items: center;
+    width: 165px;
+    justify-content: space-between;
+    font-size:medium;
+}
+
+.wyszukiwanie input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    border: 5px solid black;
+    
+}
+
+#submit_search{
+    border: 0;
+    width: 200px;
+    padding: 10px;
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit_search:hover{
+    background-color: #5c5c5c;
+    cursor: pointer;
+}
+
+.wyszukiwanie input[type=submit]:focus{
+    color: #cccccc;
+}
+
+.filter>button{
+    margin-bottom: 5px;
+    background: 0;
+    border: 0;
+    font-weight: 550;
+    font-size: 19.5px;
+    cursor: pointer;
+    border-bottom: #14141400 3px solid;
+    transition: border-bottom 0.2s;
+}
+
+.filter>button:focus{
+    border-bottom: #141414 3px solid;
+}
+</style>

@@ -1,0 +1,103 @@
+<div id="darker_background"></div>
+    <div id="cpw">
+    <div id="compass">
+        <div id="category_group">
+            <div class="category" id="polityka_obronna"><p>polityka obronna</p></div>
+            <div class="category" id="przemysl_zbrojeniowy"><p>przemysł zbrojeniowy</p></div>
+            <div class="category" id="ukraina"><p>ukraina</p></div>
+            <div class="category" id="sily_zbrojne"><p>siły zbrojne</p></div>
+            <div class="category" id="geopolityka"><p>geopolityka</p></div>
+            <div class="category" id="video"><p>video</p></div>
+            <div class="category" id="sklep"><p>sklep</p></div>
+            
+
+        </div>
+    </div>
+</div>
+<style>
+    #darker_background{
+                    position:fixed;
+                    top: 0;
+                    background-color: rgba(20, 20, 20, 0.356);
+                    width: 100%;
+                    z-index: 98;
+                    height: 100vh;
+                    animation: 0.5s starting_animationD;
+    }
+    
+    #cpw{
+        position: fixed;
+        top: 0;
+        width: 500px;
+        height: 100vh;
+        z-index: 99;
+    }
+    
+    #compass{
+        animation: 0.5s starting_animationC;
+        height: 100%;
+        background-color: #141414;
+        width: 500px;
+    }
+
+
+
+    #category_group{
+        margin-top: 100px;
+    }
+
+    @keyframes starting_animationC {
+        0% {
+            transform: translatex(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        }
+        
+    @keyframes starting_animationD {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+
+    @keyframes ending_animationC {
+        100% {
+        transform: translatey(0);
+        opacity: 1;
+        }
+        0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+    }
+
+    @keyframes ending_animationD {
+        100% {
+        opacity: 1;
+        }
+        0% {
+        opacity: 0;
+        }
+    }
+
+    .category{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .category>p:hover{
+        color: rgb(199, 199, 199);
+    }
+
+    .category>p{
+        text-decoration: none;
+        color: white;
+    }
+</style>
